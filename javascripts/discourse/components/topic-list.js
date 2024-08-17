@@ -24,6 +24,10 @@ export default Component.extend(LoadMore, {
         );
     },
 
+    get hasPinnedTopics() {
+        return this.args.topics.filter(t => t.get("pinned"));
+    },
+
     // Overwrite this to perform client side filtering of topics, if desired
     filteredTopics: alias("topics"),
 
