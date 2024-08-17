@@ -1,0 +1,19 @@
+.pinned-topic-spacer {
+  display: table-row;
+  visibility: visible;
+}
+
+.pinned-topic-spacer {
+  height: 55px;
+}
+
+.topic-list-item.pinned-topic-spacer {
+  display: table-row;
+  visibility: visible;
+}
+
+.topic-list tbody.pinned-topics tr.table-break {
+  visibility: hidden;
+  font-size: var(--font-down-1);
+  background-color: rgba(0,0,0,0);
+}
