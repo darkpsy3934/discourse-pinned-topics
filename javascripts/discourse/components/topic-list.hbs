@@ -37,8 +37,7 @@
 
 {{#if this.hasPinnedTopics}}
     <tbody class="pinned-topics">
-    {{#each this.filteredTopics as |topic index|}}
-        {{#if topic.pinned}}
+    {{#each this.hasPinnedTopics as |topic|}}
             <TopicListItem
                     @topic={{topic}}
                     @bulkSelectEnabled={{this.bulkSelectEnabled}}
@@ -66,7 +65,6 @@
                     @outletArgs={{hash topic=topic index=index}}
                     @connectorTagName="tr"
             />
-        {{/if}}
     {{/each}}
 
     <tr class="table-break">
